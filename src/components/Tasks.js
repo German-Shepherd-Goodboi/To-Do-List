@@ -6,6 +6,12 @@ const Tasks = () => {
   const addCompletedTask = useTaskStore((state) => state.addCompletedTask);
   const deleteTask = useTaskStore((state) => state.deleteTask);
 
+  let content = <h1>You have {tasks.length} tasks</h1>
+
+  if (tasks.length === 1) {
+    content = <h1>You have {tasks.length} task</h1>
+  }
+
   return (
     <div className={classes.container}>
       <ul>
@@ -24,7 +30,7 @@ const Tasks = () => {
         ))}
       </ul>
 
-      <h1>You have {tasks.length} tasks </h1>
+    {content}
     </div>
   );
 };
