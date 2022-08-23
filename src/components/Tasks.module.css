@@ -1,0 +1,30 @@
+ul {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+hr {
+  color: silver;
+  width: 50%;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+  justify-content: center;
+}
+
+.list-div:hover {
+  cursor: pointer;
+}
+
+.button {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
