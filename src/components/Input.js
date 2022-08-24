@@ -11,7 +11,6 @@ const Input = () => {
       return;
     }
     addTask(inputRef.current.value);
-    console.log(inputRef.current.value);
     inputRef.current.value = "";
   };
 
